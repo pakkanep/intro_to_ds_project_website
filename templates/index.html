@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Analysis Project</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Our CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            YOUR PROJECT
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#results">
+                        Results
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#analysis">
+                        Analysis
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">
+                        Conclusion
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-75">
+
+            <div class="col-lg-7">
+
+                <p class="eyebrow">
+                    DATA ANALYSIS PROJECT
+                </p>
+
+                <h1 class="display-1 fw-bold">
+                    Understanding
+                    <span class="text-secondary">
+                        our results
+                    </span>
+                </h1>
+
+                <p class="lead text-secondary mt-4">
+                    A simple overview of our analysis,
+                    the key findings, and what they mean
+                    in practice.
+                </p>
+
+                <a
+                    href="#results"
+                    class="btn btn-dark btn-lg mt-3"
+                >
+                    Explore the results →
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+
+                <div class="result-card">
+
+                    <p class="eyebrow text-light">
+                        KEY RESULT
+                    </p>
+
+                    <div class="display-1 fw-bold">
+                        87%
+                    </div>
+
+                    <p class="text-light-emphasis">
+                        of the analyzed cases were
+                        successfully identified.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="py-5 section-light">
+
+    <div class="container py-5">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <p class="eyebrow">
+                    01 — THE PROJECT
+                </p>
+
+                <h2 class="display-4 fw-bold">
+                    What did we investigate?
+                </h2>
+
+                <p class="lead text-secondary mt-4">
+                    We analyzed a dataset to understand
+                    patterns and relationships that can
+                    help us answer our research question.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">
+                        01
+                    </span>
+
+                    <h3>
+                        Our question
+                    </h3>
+
+                    <p>
+                        What patterns can we identify
+                        from the data?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">
+                        02
+                    </span>
+
+                    <h3>
+                        Our data
+                    </h3>
+
+                    <p>
+                        We analyzed a collection of
+                        observations relevant to our
+                        research question.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">
+                        03
+                    </span>
+
+                    <h3>
+                        Our goal
+                    </h3>
+
+                    <p>
+                        Turn the data into useful and
+                        understandable insights.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESULTS ================= -->
+
+<section id="results" class="py-5 results-section">
+
+    <div class="container py-5">
+
+        <div class="mb-5">
+
+            <p class="eyebrow">
+                02 — RESULTS
+            </p>
+
+            <h2 class="display-4 fw-bold">
+                What did we find?
+            </h2>
+
+            <p class="lead text-secondary">
+                The following results summarize the
+                most important findings from our analysis.
+            </p>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="row g-3 mb-4">
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <p>
+                        Total observations
+                    </p>
+
+                    <strong>
+                        1,248
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <p>
+                        Successful results
+                    </p>
+
+                    <strong>
+                        87%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <p>
+                        Categories
+                    </p>
+
+                    <strong>
+                        6
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <p>
+                        Average score
+                    </p>
+
+                    <strong>
+                        8.4
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHART PLACEHOLDERS -->
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="chart-card">
+
+                    <p class="eyebrow">
+                        DISTRIBUTION
+                    </p>
+
+                    <h3>
+                        Results over categories
+                    </h3>
+
+                    <div class="chart-placeholder">
+                        Chart goes here
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="chart-card">
+
+                    <p class="eyebrow">
+                        PERFORMANCE
+                    </p>
+
+                    <h3>
+                        Overall performance
+                    </h3>
+
+                    <div class="chart-placeholder">
+                        Chart goes here
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ANALYSIS ================= -->
+
+<section id="analysis" class="py-5">
+
+    <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <p class="eyebrow">
+                    03 — ANALYSIS
+                </p>
+
+                <h2 class="display-4 fw-bold">
+                    What do the results mean?
+                </h2>
+
+                <p class="lead text-secondary">
+                    The results show a clear pattern in
+                    the data. The majority of observations
+                    fall into the expected categories,
+                    while a smaller number produce
+                    different results.
+                </p>
+
+                <p class="text-secondary">
+                    This suggests that the patterns
+                    identified in our analysis may be
+                    useful for understanding the problem
+                    we investigated.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5 offset-lg-1">
+
+                <div class="insight-card">
+
+                    <p class="eyebrow text-light">
+                        KEY INSIGHT
+                    </p>
+
+                    <h3>
+                        The most important finding from
+                        our analysis was the strong
+                        difference between the categories.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONCLUSION ================= -->
+
+<section id="conclusion" class="py-5 conclusion-section">
+
+    <div class="container py-5 text-center">
+
+        <p class="eyebrow">
+            04 — CONCLUSION
+        </p>
+
+        <h2 class="display-4 fw-bold">
+            So, what did we learn?
+        </h2>
+
+        <p class="lead text-secondary mx-auto conclusion-text">
+            Our analysis demonstrates how data can be
+            used to identify patterns and provide a
+            clearer understanding of the problem.
+        </p>
+
+        <a
+            href="#"
+            class="btn btn-dark btn-lg mt-3"
+        >
+            Back to the beginning ↑
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="py-4 bg-dark text-secondary">
+
+    <div class="container">
+
+        <small>
+            Data Analysis Project · 2026
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
